@@ -1,15 +1,14 @@
 {
-	"name" : "windows-shortcuts",
-	"version" : "0.1.1",
-	"description" : "Create, edit, and query Windows shortcuts (.lnk files)",
+	"name" : "windows-shortcuts-appid",
+	"version" : "0.2.1",
+	"description" : "Create, edit, and query Windows shortcuts (.lnk files), and add appUserModelId to shortcuts",
 	"keywords" : ["shortcut", "windows", "lnk"],
 	"license" : "MIT",
-	"author" : "j201 <j201.alex@gmail.com> (http://j201.github.io)",
+	"author" : "kochiyaocean <root@kochiyaocean.org> (https://github.com/KochiyaOcean)",
 	"main" : "./lib/windows-shortcuts",
 	"repository" : {
 		"type" : "git",
-		"url" : "git://github.com/j201/windows-shortcuts.git"
+		"url" : "git://github.com/kochiyaocean/windows-shortcuts.git"
 	},
-	"homepage" : "http://github.com/j201/windows-shortcuts",
-	"os" : ["win32"]
+	"homepage" : "http://github.com/kochiyaocean/windows-shortcuts"
 }

@@ -84,6 +84,19 @@ null { expanded:
 */
 ```
 
+####ws.addAppId(path, appId, callback)
+Adds an [Application User Model ID](https://msdn.microsoft.com/en-us/library/windows/desktop/dd378459(v=vs.85).aspx) to an existing shortcut:
+
+- path - Path to the existing shortcut.
+- appId - The Application User Model ID. If you're using Electron, call [app.setAppUserModelId](http://electron.atom.io/docs/v0.36.5/api/app/#appsetappusermodelidid-windows) first to set it for the app.
+- callback - A function to be executed when ws.addAppId is finished executing. One argument is passed to it: an error or `null`.
+
+Example:
+
+```javascript
+ws.addAppId("C:/ProgramData/Microsoft/Windows/Start Menu/Windows Update.lnk", "com.squirrel.atom.Atom", console.log);
+```
+
 ##Compatibility
 Only tested on Windows 7, but shortcut.exe says is compatible with Windows 95 or later, so it should work on modern versions of Windows.
 
